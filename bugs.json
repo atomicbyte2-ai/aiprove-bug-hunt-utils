@@ -1,0 +1,8 @@
+[
+  { "fn": "factorial", "input": 5, "expected": 120, "note": "loop i<n drops n: 1*2*3*4=24" },
+  { "fn": "factorial", "input": 2, "expected": 2, "note": "same root cause: loop never multiplies by 2" },
+  { "fn": "countVowels", "input": "AEIOU", "expected": 5, "note": "regex /[aeiou]/ misses uppercase vowels" },
+  { "fn": "countVowels", "input": "AbcE", "expected": 2, "note": "same root cause: A and E missed" },
+  { "fn": "titleCase", "input": "don't", "expected": "Don't", "note": "word boundary after apostrophe capitalises T: Don'T" },
+  { "fn": "reverse", "input": "😀a", "expected": "a😀", "note": "split('') breaks surrogate pairs: lone surrogates out" }
+]
